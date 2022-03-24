@@ -18,14 +18,14 @@ export default class ArticleList extends React.Component {
                 "code": "r90cpu",
                 "type": "audio",
                 "title": "Audio Example",
-                "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                "body": "this is a audio example"
             },
             {
                 "id": 2,
                 "code": "r99rhj",
                 "type": "video",
                 "title": "Video Example",
-                "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+                "body": "this is a audio example"
             }]
         })
 
