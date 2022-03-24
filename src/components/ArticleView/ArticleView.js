@@ -1,8 +1,6 @@
 import React from "react";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Link } from "react-router-dom";
-
-
 export default class ArticleView extends React.Component {
     constructor(props) {
         super(props);
@@ -29,11 +27,13 @@ export default class ArticleView extends React.Component {
 
     render() {
         const { article } = this.state;
+        const code = this.props.location.code;
+        const type = this.props.location.type;
         return (
             <article>
                 <Jumbotron>
                     <h3>Video</h3>
-                    <div className="s3bmedia" data-code="r90cpu" data-type="audio"></div>
+                    <div className="s3bmedia" data-code={`${code}`} data-type={`${type}`}></div>
                 </Jumbotron>
             </article>
         );

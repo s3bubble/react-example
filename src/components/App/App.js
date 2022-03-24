@@ -2,7 +2,6 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 import ArticleList from '../ArticleList/ArticleList';
 import ArticleView from '../ArticleView/ArticleView';
 
