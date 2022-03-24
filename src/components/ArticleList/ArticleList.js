@@ -38,7 +38,7 @@ export default class ArticleList extends React.Component {
                 {articles.map(article =>
                     <ListGroup.Item key={article.id}>
                         <Link to={{
-                            pathname: `/posts/${article.id}`,
+                            pathname: `/media/${article.id}`,
                             code: `${article.code}`,
                             type: `${article.type}`
                         }}>{article.title}

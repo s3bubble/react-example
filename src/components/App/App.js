@@ -17,7 +17,7 @@ export default class App extends React.Component {
                         <p>Basic S3Bubble react demo click a link.</p>
                     </Jumbotron>
                     <Switch>
-                        <Route path="/posts/:postId" component={ArticleView} />
+                        <Route path="/media/:mediaId" component={ArticleView} />
                         <Route path="/" component={ArticleList} />
                     </Switch>
                 </Container>
