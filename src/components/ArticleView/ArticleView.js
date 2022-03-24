@@ -32,7 +32,7 @@ export default class ArticleView extends React.Component {
         return (
             <article>
                 <Jumbotron>
-                    <h3>Video</h3>
+                    <h3>Media</h3>
                     <div className="s3bmedia" data-code={`${code}`} data-type={`${type}`}></div>
                 </Jumbotron>
             </article>
