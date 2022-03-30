@@ -15,14 +15,14 @@ export default class ArticleList extends React.Component {
         this.setState({
             articles: [{
                 "id": 1,
-                "code": "r90cpu",
+                "code": "r9k0lz",
                 "type": "audio",
                 "title": "Audio Example",
                 "body": "this is a audio example"
             },
             {
                 "id": 2,
-                "code": "r99rhj",
+                "code": "r9k0ji",
                 "type": "video",
                 "title": "Video Example",
                 "body": "this is a audio example"
