@@ -1,6 +1,6 @@
 import React from "react";
 
-export default class Player extends React.Component {
+export default class S3Player extends React.Component {
 
     constructor(props) {
         super(props);
@@ -9,7 +9,6 @@ export default class Player extends React.Component {
     componentDidMount() {
 
         // You can edit this component to suit your needs
-
         const link = document.createElement("link");
         link.href = "https://unpkg.com/@s3bubble/player@latest/dist/css/s3bubble.min.css";
         link.type = "text/css";
@@ -25,7 +24,12 @@ export default class Player extends React.Component {
     }
 
     render() {
-        const { code, type } = this.props;
-        return (<div className="s3bmedia" data-code={`${code}`} data-type={`${type}`}></div>);
+        const attributes = {
+            className: 's3bmedia',
+        }
+        for (const [key, value] of Object.entries(this.props.setup)) {
+            attributes[`data-${key}`] = value;
+        }
+        return (<div {...attributes}></div>);
     }
 }
