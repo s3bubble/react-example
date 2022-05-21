@@ -2,8 +2,8 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ArticleList from '../MediaList/MediaList';
-import ArticleView from '../MediaView/MediaView';
+import MediaList from '../MediaList/MediaList';
+import MediaView from '../MediaView/MediaView';
 
 export default class App extends React.Component {
     render() {
@@ -12,13 +12,12 @@ export default class App extends React.Component {
                 <Container>
                     <Jumbotron className="text-center">
                         <Link to="/">
-                            <h1>S3Bubble Demo</h1>
+                            <h2>S3Bubble React</h2>
                         </Link>
-                        <p>Basic S3Bubble react demo click a link.</p>
                     </Jumbotron>
                     <Switch>
-                        <Route path="/media/:mediaId" component={ArticleView} />
-                        <Route path="/" component={ArticleList} />
+                        <Route path="/media/:code/:type" component={MediaView} />
+                        <Route path="/" component={MediaList} />
                     </Switch>
                 </Container>
             </Router>
